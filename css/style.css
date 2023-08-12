@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.wrapper{
+    height: 100%;
+    width:100%;
+    position: relative;
+    display: flex;
+    
+    flex-direction: column;
+    background-color: black;
+    justify-content: space-between;
+   
+}
+
+.calc_text{
+    margin:auto;
+     padding-top:5vh;
+     font-size: 2vw;
+     color:rgb(17, 87, 239);
+     /* background-color: red; */
+    
+
+}
+
+.calculator_main_frame{
+    
+    margin:auto 1px;
+    text-align: center;
+   /* background-color: red; */
+}
+input{
+   padding:10px;
+   /* border:1px solid white; */
+   font-size: 14px;
+   color:white;
+   background-color: black;
+   outline: 1px solid black;
+   border:none;
+   margin-left:30px;
+   cursor: default;
+   caret-color: transparent;
+}
+button{
+    cursor: pointer;
+    /* padding:10px; */
+    margin:5px;
+    height: 50px;
+    width: 70px;
+    background-color: grey;
+    color:white;
+    font-weight: 800;
+    font-size: 14px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    transition: background-color 0.1s, color 0.2s;
+}
+#manipulation{
+   background-color: orange;
+   border:1px solid orange;
+}
+
+#button_zero{
+    width:150px;
+    
+/* top-left | top-right | bottom-right | bottom-left */
+border-radius: 50px 50px 50px 50px;
+
+    
+}
+
+
+
+button:active,#manipulation:active{
+    background-color: cornflowerblue;
+    border:1px solid cornflowerblue;
+}
+
+
+@media (max-width:600px)
+{
+
+   .calc_text{
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+   }
+
+   .buttons{
+    cursor: pointer;
+    /* padding:10px; */
+    margin:5px;
+    height: 80px;
+    width: 80px;
+    background-color: grey;
+    color:white;
+    font-weight: 800;
+    font-size: 24px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    transition: background-color 0.1s, color 0.2s;
+   }
+    
+
+   #button_zero{
+    width:173px;    
+     /* top-left | top-right | bottom-right | bottom-left */
+     border-radius: 50px 50px 50px 50px;   
+    text-align:center;
+    
+   
+    }
+}
